@@ -52,7 +52,7 @@
 
                 <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>                              
 
-                <li class="nav-item"><a class="nav-link" href="#  ">Registrarme</a></li>
+                <li class="nav-item"><a class="nav-link" href="registro.php">Registrarme</a></li>
                                
             </ul>
           </div>
