@@ -302,7 +302,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright © 2021 EasyJobs <a href="#"></a></p>
+              <p>Copyright © 2021 Findme <a href="#"></a></p>
             </div>
             <div class="innner-content">
               <p><a href="index.html"></a>Acerca de nosotros</p>

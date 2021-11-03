@@ -1,5 +1,7 @@
 <?php   
 
+    include("conection.php");
+
    if(isset($_POST['register'])) {
         if(strlen($_POST['name']) >= 1 &&
             strlen($_POST['lastname']) >= 1 &&
