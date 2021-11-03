@@ -79,7 +79,7 @@
                      <div class="label">
                         Telefono Celular
                      </div>
-                     <input type="phone" min="0" max="200">
+                     <input type="phone" min="0" max="200" name="phone">
                   </div>
 
                   <div class="field">
@@ -127,18 +127,18 @@
                      <div class="label">
                         Correo Electrónico
                      </div>
-                     <input type="text">
+                     <input type="text" name="email">
                   </div>
                   <div class="field">
                      <div class="label">
                         Contraseña
                      </div>
-                     <input type="password">
+                     <input type="password" name="password">
                   </div>
                   <div class="field btns">
                      <button class="prev-3 prev">Regresar</button>
-                     <!-- <button class="submit">Submit</button> -->
-                     <input type="submit" class="submit" name="register" >
+                     <button class="submit" type="submit" name="register">Registrarme</button>
+                     <!-- <input type="submit" class="submit" name="register" > -->
                   </div>
                </div>
             </form>
@@ -147,6 +147,6 @@
             ?>
          </div>
       </div>
-      <script src="script.js"></script>
+      <script src="scripts.js"></script>
    </body>
 </html>

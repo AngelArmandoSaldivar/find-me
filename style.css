@@ -42,7 +42,7 @@ body{
   transition: margin-left 0.3s ease-in-out;
 }
 .form-outer form .page .title{
-  text-align: left;
+  text-align: center;
   font-size: 25px;
   font-weight: 500;
 }
