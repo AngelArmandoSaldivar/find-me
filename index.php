@@ -1,326 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="wide wow-animation" lang="en">
   <head>
-
+    <!-- Site Title-->
+    <title>Inicio</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/images/logofindme.jpeg">
-    <link href="" rel="stylesheet">
-
-    <title>Findme</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
-
-  <body> 
-
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2> <img style="width: 75px;" src="assets/images/FM.png" alt="">  Findme </h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio
-                      <span class="sr-only">(current)</span>
-                    </a>
-                </li> 
-
-                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>                              
-
-                <li class="nav-item"><a class="nav-link" href="registro.php">Registrarme</a></li>
-                               
-            </ul>
-          </div>
-        </div>
-      </nav>      
-    </header>
-
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Bienvenido a</h4>
-            <h2>FINDME</h2>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Te ayudará a localizar a </h4>
-            <h2>tu ser querido</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Pulsera con código QR</h4>
-            <h2>Que se puede excanear con tu celular</h2>
-          </div>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- Page Loader-->
+    <div id="page-loader">
+      <div class="page-loader-body">
+        <div class="cssload-spinner">
+          <div class="cssload-cube cssload-cube0"></div>
+          <div class="cssload-cube cssload-cube1"></div>
+          <div class="cssload-cube cssload-cube2"></div>
+          <div class="cssload-cube cssload-cube3"></div>
+          <div class="cssload-cube cssload-cube4"></div>
+          <div class="cssload-cube cssload-cube5"></div>
+          <div class="cssload-cube cssload-cube6"> </div>
+          <div class="cssload-cube cssload-cube7"></div>
+          <div class="cssload-cube cssload-cube8"></div>
+          <div class="cssload-cube cssload-cube9"></div>
+          <div class="cssload-cube cssload-cube10"></div>
+          <div class="cssload-cube cssload-cube11"></div>
+          <div class="cssload-cube cssload-cube12"></div>
+          <div class="cssload-cube cssload-cube13"></div>
+          <div class="cssload-cube cssload-cube14"></div>
+          <div class="cssload-cube cssload-cube15"></div>
         </div>
       </div>
     </div>
-    <!-- Banner Ends Here -->
-
-    <div class="latest-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Offers</h2>
-              <a href="offers.html">view more <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="offers.html"><img src="assets/images/ImagenNoEncontrada.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="offers.html"><h4>Lorem ipsum dolor sit amet, consectetur</h4></a>
-                <h6><small>from</small> $120 <small>per weekend</small></h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+    <!-- Page-->
+    <div class="page">
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="5px" data-lg-stick-up-offset="5px" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.php">
+                      <div class="brand__name"><img class="brand__logo-dark" src="assets/images/FM.png" style="width:110px"/>
+                      <span></span></div></a></div>
+                </div>
+                <!-- RD Navbar Nav-->
+                <div class="rd-navbar-nav-wrap">
+                  <div class="rd-navbar-element">
+                    <ul class="list-icons list-inline-sm">
+                      <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa fa-pinterest icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                    </ul>
+                  </div>
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="index.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    </li>
+                    <li><a href="registro.php">Registro<span></span><span></span><span></span><span></span></a>
+                    </li>
+                    <li><a href="login.php">Iniciar Sesión<span></span><span></span><span></span><span></span></a>
+                    </li>
+                    <li><a href="#">Contacto<span></span><span></span><span></span><span></span></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          </nav>
+        </div>
+      </header>
 
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="offers.html"><img src="assets/images/ImagenNoEncontrada.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="offers.html"><h4>Estorum aspernatur officiis accusamus </h4></a>
-                <h6><small>from</small> $150 <small>per weekend</small></h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+      
+      <section class="section text-center">
+        
+        <div class="slick-wrap">
+          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera5.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera5.png" alt="" width="1200" height="664" style="width:700px; height:400px;"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Pulsera #1</p>
+                      <p class="thumb-ann__text">With the experience of more than 10 years, I am glad to offer you a wide variety of love story photography services at affordable prices.</p>
+                    </div></a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="offers.html"><img src="assets/images/ImagenNoEncontrada.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="offers.html"><h4>Reiciendis ullam culpa optio providen</h4></a>
-                <h6><small>from</small> $150 <small>per weekend</small></h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+            <div class="item">
+              <div class="slick-slide-inner">
+              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera1.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera1.jpg" alt="" width="1200" height="664" style="width:700px; height:400px;"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Pulsera #2</p>
+                      <p class="thumb-ann__text">With the experience of more than 10 years, I am glad to offer you a wide variety of love story photography services at affordable prices.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera2.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera2.jpg" alt="" width="1200" height="664" style="width:700px; height:400px;"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Image #3</p>
+                      <p class="thumb-ann__text">With the experience of more than 10 years, I am glad to offer you a wide variety of love story photography services at affordable prices.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera3.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera3.jpg" alt="" width="1200" height="664" style="width:700px; height:400px;"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Image #4</p>
+                      <p class="thumb-ann__text">With the experience of more than 10 years, I am glad to offer you a wide variety of love story photography services at affordable prices.</p>
+                    </div></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>About Us</h2>
+  
+      <section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
+            <div class="cell-sm-6 wow fadeInRightSmall">
+              <div class="thumb-line"><img src="images/adultoMayor.jpeg" alt="" width="531" height="640"/>
+              </div>
+            </div>
+            <div class="cell-sm-6">
+              <div class="box-width-3">
+                <p class="heading-1 wow fadeInLeftSmall">Findme</p>
+                <article class="quote-big wow fadeInLeftSmall" data-wow-delay=".1s">
+                  <p class="q">Aplicación para la ayuda a adultos mayores.</p>
+                </article>
+                <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
+                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="#" data-wow-delay=".4s">Saber más</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad <a href="#">asperiores</a> tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.</p>
-              <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
+        </div>
+      </section>
+
+
+           
+
+     
+      <footer class="footer-centered section bg-gray-darker">
+        <div class="shell">
+          <div class="range range-sm-center">
+            <div class="cell-sm-10 cell-md-8 cell-lg-6">
+              <!-- Brand--><a class="brand" href="index.html">
+                <div class="brand__name">
+                </div><span class="brand__slogan"></span></a>
+                    <!-- RD Mailform-->
+                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                      <div class="form__inner">
+                        <div class="form-wrap">
+                          <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
+                          <label class="form-label" for="subscribe-form-footer-email">Tu correo electrónico</label>
+                        </div>
+                        <div class="form-button">
+                          <button class="button button-link" type="submit">Suscribete</button>
+                        </div>
+                      </div>
+                    </form>
+              <ul class="list-icons list-inline-sm">
+                <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                <li><a class="icon icon-sm fa fa-pinterest icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
               </ul>
-              <a href="about-us.html" class="filled-button">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/ImagenNoEncontrada.jpg" alt="">
+              <!-- Rights-->
+              <p class="rights"><span>Findme</span><span>&nbsp;&copy;&nbsp; </span><span class="copyright-year"></span>.&nbsp; <br class="veil-xs">
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-
-    <div class="services" style="background-image: url(assets/images/other-image-fullscren-1-1920x900.jpg);" >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Latest blog posts</h2>
-
-              <a href="blog.html">read more <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/ImagenNoEncontrada.jpg" class="img-fluid" alt=""></a>
-
-              <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit hic</a></h4>
-
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/ImagenNoEncontrada.jpg" class="img-fluid" alt=""></a>
-
-              <div class="down-content">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h4>
-
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <a href="#" class="services-item-image"><img src="assets/images/ImagenNoEncontrada.jpg" class="img-fluid" alt=""></a>
-
-              <div class="down-content">
-                <h4><a href="#">Aperiam modi voluptatum fuga officiis cumque</a></h4>
-
-                <p style="margin: 0;"> John Doe &nbsp;&nbsp;|&nbsp;&nbsp; 12/06/2020 10:30 &nbsp;&nbsp;|&nbsp;&nbsp; 114</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="happy-clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Happy Clients</h2>
-
-              <a href="testimonials.html">read more <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="owl-clients owl-carousel text-center">
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-              
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-              
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-              
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>John Doe</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-              
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Jane Smith</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-              
-              <div class="service-item">
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="down-content">
-                  <h4>Antony Davis</h4>
-                  <p class="n-m"><em>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</em></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-right">
-                  <a href="contact.html" class="filled-button">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright © 2021 Findme <a href="#"></a></p>
-            </div>
-            <div class="innner-content">
-              <p><a href="index.html"></a>Acerca de nosotros</p>
-              <p><a href="index.html"></a>Acerca de nosotros</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by Himic-->
   </body>
 </html>
