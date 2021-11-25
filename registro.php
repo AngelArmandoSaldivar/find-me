@@ -10,66 +10,75 @@
    <body>
       <div class="container">
          <header>Registro</header>
-         <div class="progress-bar">
-            <div class="step">
-               <p>
+
+         <div class="progress-bar" >
+            <div class="step" i>
+               <p id="paso">
                   Paso 1
                </p>
-               <div class="bullet">
+               <div class="bullet" id="numeroB">
                   <span>1</span>
                </div>
-               <div class="check fas fa-check"></div>
+               <div class="check fas fa-check" id="check"></div>
             </div>
             <div class="step">
-               <p>
+               <p  id="paso">
                   Paso 2
                </p>
-               <div class="bullet">
+               <div class="bullet" id="numeroB">
                   <span>2</span>
                </div>
-               <div class="check fas fa-check"></div>
+               <div class="check fas fa-check"  id="check"></div>
             </div>
             <div class="step">
-               <p>
+               <p  id="paso">
                     Paso 3
                </p>
-               <div class="bullet">
+               <div class="bullet" id="numeroB">
                   <span>3</span>
                </div>
-               <div class="check fas fa-check"></div>
+               <div class="check fas fa-check"  id="check"></div>
             </div>
             <div class="step">
-               <p>
+               <p  id="paso">
                   Paso 4
                </p>
-               <div class="bullet">
+               <div class="bullet" id="numeroB">
                   <span>4</span>
                </div>
-               <div class="check fas fa-check"></div>
+               <div class="check fas fa-check"  id="check"></div>
             </div>
          </div>
          <div class="form-outer">
-            <form method="POST">
-               <div class="page slide-page">
+
+            <form method="POST" id="form">
+               <div class="page slide-page" id="eventos">
                   <div class="title">
                      Información basica:
                   </div>
+
+
                   <div class="field">
                      <div class="label">
                         Nombre(s)
                      </div>
-                     <input type="text" name="name">
+                     <input type="text" name="name" id="name" placeholder="ingresa tu nombre" required/>
                   </div>
+
+
                   <div class="field">
                      <div class="label">
                         Apellidos
                      </div>
-                     <input type="text" name="lastname">
+                     <input type="text" name="lastname"id="last" placeholder="ingresa tus apellidos" required>
                   </div>
+
+
                   <div class="field">
-                     <button class="firstNext next">Siguiente</button>
+                     <button class="firstNext next" id="boton1" >Siguiente</button>
                   </div>
                </div>
+
                <div class="page">
                   <div class="title">
                      Información de contacto:
@@ -79,19 +88,19 @@
                      <div class="label">
                         Telefono Celular
                      </div>
-                     <input type="phone" min="0" max="200" name="phone">
+                     <input type="phone" id="cel" min="0" max="200" name="phone" placeholder="Ingresa tu numero telefonico">
                   </div>
 
                   <div class="field">
                      <div class="label">
                         Edad
                      </div>
-                     <input type="number" name="age">
+                     <input type="number" id="edad" name="age" min="15" max="90" placeholder="Ingresa tu edad">
                   </div>
                   
                   <div class="field btns">
                      <button class="prev-1 prev">Regresar</button>
-                     <button class="next-1 next">Siguiente</button>
+                     <button class="next-1 next"  id="boton2">Siguiente</button>
                   </div>
                </div>
                <div class="page">
@@ -102,21 +111,21 @@
                      <div class="label">
                         Fecha
                      </div>
-                     <input type="text" placeholder="d/m/y">
+                     <input type="date" id="fecha" min="1935-01-01" max="2006-01-01" placeholder="dd/mm/yyyy">
                   </div>
                   <div class="field">
                      <div class="label">
                         Género
                      </div>
                      <select>
-                        <option>Masculino</option>
+                        <option >Masculino</option>
                         <option>Femenino</option>
                         <option>Otro</option>
                      </select>
                   </div>
                   <div class="field btns">
                      <button class="prev-2 prev">Regresar</button>
-                     <button class="next-2 next">Siguiente</button>
+                     <button class="next-2 next" id="boton3">Siguiente</button>
                   </div>
                </div>
                <div class="page">
@@ -127,14 +136,17 @@
                      <div class="label">
                         Correo Electrónico
                      </div>
-                     <input type="text" name="email">
+                     <input type="email" name="email" id="correo">
                   </div>
                   <div class="field">
                      <div class="label">
                         Contraseña
                      </div>
-                     <input type="password" name="password">
+                     <input type="password" name="password" id="password" autocomplete="off">
                   </div>
+                  <div>
+                    <h6>Debe de contar con al menos 8 caracteres entre mayusculas y minusculas</h6>
+                     </div>
                   <div class="field btns">
                      <button class="prev-3 prev">Regresar</button>
                      <button class="submit" type="submit" name="register">Registrarme</button>
@@ -142,11 +154,13 @@
                   </div>
                </div>
             </form>
-            <?php 
+
+              <?php 
                 include("registrar.php")
             ?>
          </div>
       </div>
       <script src="scripts.js"></script>
+       <script src="validacion.js"></script>
    </body>
 </html>

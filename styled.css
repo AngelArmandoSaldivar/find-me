@@ -181,3 +181,11 @@ form .page .btns button.next{
   display: block;
   color: #fff;
 }
+.enlace a{
+ color: darkblue;
+ text-decoration: none;
+}
+
+.enlace a:hover{
+  color: silver;
+}

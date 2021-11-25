@@ -42,7 +42,7 @@
       </div>
     </div>
 
-
+    
     <!-- Page-->
     <div class="page">
       <header class="section page-header">
@@ -56,7 +56,7 @@
               <div class="rd-navbar-main">
 
 
-
+              
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
@@ -80,7 +80,7 @@
                      
                     </ul>
 
-
+                    
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
@@ -100,82 +100,53 @@
         </div>
       </header>
 
-      
-      <section class="section text-center">
-        
-        <div class="slick-wrap">
-          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
-            <div class="item">
-              <div class="slick-slide-inner">
-
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera5.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera5.png" alt="" width="1200" height="664" style="width:600px; height:200px;"/>
-                    <div class="thumb-ann__caption"> 
-                      <p class="thumb-ann__title heading-3">Ya no mas preocupaciones</p>
-                      <p class="thumb-ann__text">Cuidamos a tus seres mas amados con la mejor tecnologia.</p>
-                    </div></a>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="item">
-              <div class="slick-slide-inner">
-              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera1.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera1.jpg" alt="" width="1200" height="664" style="width:600px; height:200px;"/>
-                    <div class="thumb-ann__caption"> 
-                      <p class="thumb-ann__title heading-3">Una pulsera personalizada</p>
-                      <p class="thumb-ann__text">Con la informacion mas relevante para cada paciente.</p>
-                    </div></a>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="item">
-              <div class="slick-slide-inner">
-              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera2.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera2.jpg" alt="" width="1200" height="664" style="width:600px; height:200px;"/>
-                    <div class="thumb-ann__caption"> 
-                      <p class="thumb-ann__title heading-3">Totalmente comoda</p>
-                      <p class="thumb-ann__text">Su material  suave es nuestro punto clave</p>
-                    </div></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="slick-slide-inner">
-              <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera3.jpg" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera3.jpg" alt="" width="1200" height="664" style="width:600px; height:200px;"/>
-                    <div class="thumb-ann__caption"> 
-                      <p class="thumb-ann__title heading-3">Resistente</p>
-                      <p class="thumb-ann__text">Resistente ante cualquier situacion o clima</p>
-                    </div></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-  
+      <h1 class="text-center">Ayudamos a nuestros adultos mayores</h1>
+     
       <section class="section section-md bg-white">
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
-            <div class="cell-sm-6 wow fadeInRightSmall">
-              <div class="thumb-line"><img src="images/adultoMayor.jpeg" alt="" width="531" height="640"/>
+            <div class="cell-sm-6 wow fadeInLeftSmall">
+              <div class="thumb-line"><img src="images/adultos.jpg" alt="" width="531" height="640"/>
               </div>
             </div>
             <div class="cell-sm-6">
               <div class="box-width-3">
-                <p class="heading-1 wow fadeInLeftSmall">Find-me</p>
+                <p class="heading-1 wow fadeInLeftSmall">Son nuestra familia</p>
                 <article class="quote-big wow fadeInLeftSmall" data-wow-delay=".1s">
-                  <p class="q">Aplicación para la ayuda a adultos mayores.</p>
+                
                 </article>
                 <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="Saber.php" data-wow-delay=".4s">Saber más</a>
+                <p class="wow fadeInLeftSmall" data-wow-delay=".3s" >El envejecimiento es individual, es el resultado de la combinación de nuestra carga genética y la forma de adaptarnos al teatro de nuestra vida. La adaptación satisfactoria, la alta autoestima, la libertad, la felicidad, el bienestar guardan
+                una relación con la buena calidad de vida en general. Los factores que consideramos mas im-portantes para una buena  calidad de vida en la vejez serían: el grado de funcionalidad física, psíquica y social, la muerte de un miembro de la pareja y el estado de salud percibid.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+         <section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
+            <div class="cell-sm-6 wow fadeInLeftSmall">
+              <div class="thumb-line"><img src="images/adultos2.jpg" alt="" width="531" height="640"/>
+              </div>
+            </div>
+
+            <div class="cell-sm-6">
+              <div class="box-width-3">
+                <p class="heading-1 wow fadeInLeftSmall" >La importancia de una buena vejez</p>
+                <article class="quote-big wow fadeInLeftSmall" data-wow-delay=".1s">
+                  
+                </article>
+                <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
+                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="index.php" data-wow-delay=".4s">Regresar a inicio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
            
@@ -192,8 +163,8 @@
                     <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                       <div class="form__inner">
                         <div class="form-wrap">
-                          <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
-                          <label class="form-label" for="subscribe-form-footer-email">Tu correo electrónico</label>
+                            <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
+                          <label class="form-label" for="subscribe-form-footer-email">Envianos tu correo para contactarte</label>
                         </div>
                         <div class="form-button">
                           <button class="button button-link" type="submit">Suscribete</button>
@@ -201,9 +172,9 @@
                       </div>
                     </form>
               <ul class="list-icons list-inline-sm">
-               <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com/explore/locations/1311940128921954/estancia-para-adultos-mayores-vitalicia/"><span></span><span></span><span></span><span></span></a></li>
+                <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com/explore/locations/1311940128921954/estancia-para-adultos-mayores-vitalicia/"><span></span><span></span><span></span><span></span></a></li>
                 <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="https://www.facebook.com/cuidadoparalavida/"><span></span><span></span><span></span><span></span></a></li>
-             
+                
               </ul>
               <!-- Rights-->
               <p class="rights"><span>Findme</span><span>&nbsp;&copy;&nbsp; </span><span class="copyright-year"></span>.&nbsp; <br class="veil-xs">

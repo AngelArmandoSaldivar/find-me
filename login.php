@@ -22,7 +22,7 @@
                      <div class="label">
                         Correo Electrónico
                      </div>
-                     <input type="text" name="email">
+                     <input type="email" name="email">
                   </div>
                   <div class="field">
                      <div class="label">
@@ -32,6 +32,11 @@
                   </div>
                   <div class="field btns">
                      <button class="submit">Iniciar sesión</button>
+                     <!-- <input type="submit" class="submit" name="register" > -->
+                      
+                  </div>
+                  <div class="enlace">
+                              <a  class="enlace" href="index.php">Regresar a la pagina principal</a>
                      <!-- <input type="submit" class="submit" name="register" > -->
                   </div>
                </div>
