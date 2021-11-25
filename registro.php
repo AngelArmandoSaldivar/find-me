@@ -62,8 +62,9 @@
                      <div class="label">
                         Nombre(s)
                      </div>
-                     <input type="text" name="name" id="name" placeholder="ingresa tu nombre" required/>
+                     <input type="text" name="name" id="name" placeholder="ingresa tu nombre" required/>                    
                   </div>
+                  <div id="errorName" style="font-size:15px"></div>
 
 
                   <div class="field">
@@ -72,6 +73,7 @@
                      </div>
                      <input type="text" name="lastname"id="last" placeholder="ingresa tus apellidos" required>
                   </div>
+                  <div id="errorLastName"></div>
 
 
                   <div class="field">
@@ -88,8 +90,9 @@
                      <div class="label">
                         Telefono Celular
                      </div>
-                     <input type="phone" id="cel" min="0" max="200" name="phone" placeholder="Ingresa tu numero telefonico">
+                     <input type="phone" id="cel" min="0" max="200" name="phone" placeholder="XX XXXX XX XX">
                   </div>
+                  <div id="errPhone"></div>
 
                   <div class="field">
                      <div class="label">
@@ -97,6 +100,7 @@
                      </div>
                      <input type="number" id="edad" name="age" min="15" max="90" placeholder="Ingresa tu edad">
                   </div>
+                  <div id="errAge"></div>
                   
                   <div class="field btns">
                      <button class="prev-1 prev">Regresar</button>
@@ -113,10 +117,14 @@
                      </div>
                      <input type="date" id="fecha" min="1935-01-01" max="2006-01-01" placeholder="dd/mm/yyyy">
                   </div>
+                  <div id="errDate"></div>
+
                   <div class="field">
                      <div class="label">
                         Género
                      </div>
+                     <div id="errGender"></div>
+
                      <select>
                         <option >Masculino</option>
                         <option>Femenino</option>
@@ -132,21 +140,27 @@
                   <div class="title">
                      Detalles de Inicio Sesión
                   </div>
+
                   <div class="field">
                      <div class="label">
                         Correo Electrónico
                      </div>
-                     <input type="email" name="email" id="correo">
+                     <input type="email" name="email" id="correo" require>
                   </div>
+                  <div id="errEmail"></div>
+
                   <div class="field">
                      <div class="label">
                         Contraseña
                      </div>
-                     <input type="password" name="password" id="password" autocomplete="off">
+                     <input type="password" name="password" id="password" autocomplete="off" require>
                   </div>
+                  <div id="errPassword"></div>
+
                   <div>
                     <h6>Debe de contar con al menos 8 caracteres entre mayusculas y minusculas</h6>
-                     </div>
+                  </div>
+
                   <div class="field btns">
                      <button class="prev-3 prev">Regresar</button>
                      <button class="submit" type="submit" name="register">Registrarme</button>

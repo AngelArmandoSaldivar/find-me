@@ -104,11 +104,11 @@
       <section class="section text-center">
         
         <div class="slick-wrap">
-          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
+          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">          
             <div class="item">
               <div class="slick-slide-inner">
 
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/pulsera5.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera5.png" alt="" width="1200" height="664" style="width:600px; height:200px;"/>
+                <div class="slick-slide-caption" style="padding: 5px 100px;"><a class="thumb-ann thumb-mixed_large" href="images/pulsera5.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/pulsera5.png" alt="" width="1200" height="664" style="width:100%; height:350px;"/>
                     <div class="thumb-ann__caption"> 
                       <p class="thumb-ann__title heading-3">Ya no mas preocupaciones</p>
                       <p class="thumb-ann__text">Cuidamos a tus seres mas amados con la mejor tecnologia.</p>
@@ -170,17 +170,13 @@
                   <p class="q">Aplicación para la ayuda a adultos mayores.</p>
                 </article>
                 <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="Saber.php" data-wow-delay=".4s">Saber más</a>
+                <h4 class="wow fadeInLeftSmall" data-wow-delay=".3s" style="text-align: justify;">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</h4><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="Saber.php" data-wow-delay=".4s">Saber más</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-           
-
-     
       <footer class="footer-centered section bg-gray-darker">
         <div class="shell">
           <div class="range range-sm-center">
@@ -216,7 +212,7 @@
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- coded by Himic-->
   </body>
 </html>

@@ -1,8 +1,7 @@
 <?php 
     session_start();
-    include 'conection.php';
-    $correo = $_SESSION['email'];    
-     
+    include 'conection.php';    
+    
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +78,36 @@
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInRightSmall">
                 <h1>Tu Código QR</h1>
-              <div class="thumb-line"><img src="images/qr_prueba.png" alt="" style="width:450px"/>
+              <div class="thumb-line">
+                <?php 
+
+                  $correo = $_SESSION['email'];
+                      
+                  require 'phpqrcode/qrlib.php';
+
+                  $correo = $_SESSION['email'];
+                  $query = "SELECT * FROM users WHERE email='$correo'";
+
+                  $result = mysqli_query($conection,$query);
+
+                  while($row = $result->fetch_assoc()) {
+                    $dir = 'temp/';
+
+                    if(!file_exists($dir))
+                      mkdir($dir);
+
+                    $filename = $dir.'test.png';
+                    $tamanio = 12;
+                    $level = 'L';
+                    $frameSize = 3;
+                    $contenido = 'https://findmed.herokuapp.com/userView.php?id="'.$row["idusers"].'"';
+
+                    QRcode::png($contenido, $filename, $level, $tamanio, $frameSize);
+
+                    echo '<img src="'.$filename.'" />';
+                  }
+                
+                ?>
               </div>
             </div>
             <div class="cell-sm-6">
@@ -145,16 +173,16 @@
                         </pre>
 
                         <div id="map" style="height: 400px; width:100%; "></div>
-                        <script>
-                            function initMap() {
-                                var coordenadas = {lat: 19.4040032, lng: -98.9880654};
-                                var mapa = new google.maps.Map(document.getElementById("map"), {zoom:15, center: coordenadas});
-                                var marker = new google.maps.Marker({position: coordenadas, map:mapa});
-                            }
-                        </script>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC36bGPspEJEk79AVJmUNWXcjMB7AlYtdg&callback=initMap" async defer></script>
-                </p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="contact.php" data-wow-delay=".4s">Contacto de confianza</a>
-              </div>
+                          <script>
+                              function initMap() {
+                                  var coordenadas = {lat: 19.2563083, lng: -99.5384743};
+                                  var mapa = new google.maps.Map(document.getElementById("map"), {zoom:20, center: coordenadas});
+                                  var marker = new google.maps.Marker({position: coordenadas, map:mapa});
+                              }
+                          </script>
+                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC36bGPspEJEk79AVJmUNWXcjMB7AlYtdg&callback=initMap" async defer></script>
+                          </p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="contact.php" data-wow-delay=".4s">Contacto de confianza</a>
+                        </div>
             </div>
           </div>
         </div>
@@ -199,7 +227,7 @@
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- coded by Himic-->
   </body>
 </html>

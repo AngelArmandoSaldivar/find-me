@@ -26,59 +26,71 @@ const parrafo=document.getElementById("warnings")
 
 nextBtnFirst.addEventListener("click", function(event){
   event.preventDefault();
-  
-  if(nombre.value==''){
-   alert("el nombre esta vacio")
+
+  let errName = document.getElementById("errorName");
+  let errLastName = document.getElementById("errorLastName");  
+  let errPhone = document.getElementById("errPhone");  
+  let errAge = document.getElementById("errAge");  
+  let errDate = document.getElementById("errDate");
+  let errGender = document.getElementById("errGender");
+  let errEmail = document.getElementById("errEmail");
+  let errPassword = document.getElementById("errPassword");
+
+  console.log(nombre.value);  
+
+  if(nombre.value === ''){  
+    errName.innerHTML = "<h4 style=color:red>Nombre requerido!</h4>";
+  } else if(nombre.value.length > 0 && nombre.value.length < 3) {
+    errName.innerHTML = "<h4 style=color:red>Nombre demasiado corto!</h4>";
+  } else if(nombre.value.length >= 3) {
+    errName.innerHTML = "";
   }
-  else if(nombre.value.length<4 ){
-  alert("nombre demasiado corto")
+  if(last.value === '') {
+    errLastName.innerHTML = "<h4 style=color:red>Apellido requerido!</h4>";
+  } else if(last.value.length > 0 && last.value.length < 3) {
+    errLastName.innerHTML = "<h4 style=color:red>Apellido demasiado corto!</h4>";
+  } else if(last.value.length >=3) {
+    errLastName.innerHTML = "";
   }
- else  if(last.value==''){
-   alert("el apellido esta vacio")
-  }
-  else if(last.value.length<4){
- alert('alert demasiado pequeño')
-  }
-  else{
-    console.log("estoy lleno")
-  slidePage.style.marginLeft = "-25%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  if(nombre.value.length >= 3 && last.value.length >=3) {
+    slidePage.style.marginLeft = "-25%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
   }
 });
 
 
 nextBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  
-  if(cel.value==''){
-   alert("el telefono esta vacio")
+  if(cel.value === ''){
+    errPhone.innerHTML = "<h4 style=color:red>Telefono requerido!</h4>";
   }
-  else if(cel.value.length<10 ){
-  alert("faltan numero a su telefono")
+  else if(cel.value.length > 0 && cel.value.length < 10 ){
+    errPhone.innerHTML = "<h4 style=color:red>Telefono demasiado corto!</h4>";
   }
-  else if(cel.value>=11){
-    alert("son demasiados numeros")
+  else if(cel.value.length >= 11){
+    errPhone.innerHTML = "<h4 style=color:red>Telefono demasiado largo.!</h4>";
+  } else if(cel.value.length > 0 && cel.value.length <= 10){
+    errPhone.innerHTML = "";
   }
- else  if(edad.value==''){
-   alert("ingresa tu edad")
-  }
-   else if(edad.value<=5){
- alert('debes de tener mas de 15 años')
 
-  }
-   else if(edad.value>=100){
- alert('excendente de edad')
-
-    } else{
-      console.log("logrado")
-  slidePage.style.marginLeft = "-50%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  if(edad.value == ''){
+    errAge.innerHTML = "<h4 style=color:red>Edad requerida!</h4>";
+  } else if(edad.value <= 15){
+    errAge.innerHTML = "<h4 style=color:red>Debes tener más de 15 años!</h4>";
+  } else if(edad.value >= 100){
+    errAge.innerHTML = "<h4 style=color:red>Edad excedida!</h4>";
+  } else if(edad.value > 0 && edad.value.length <=100) {
+    errAge.innerHTML = "";
+  } 
+  if(cel.value.length === 10 && edad.value > 0 && edad.value <=100) {
+    slidePage.style.marginLeft = "-50%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
   }
 });
 
@@ -86,27 +98,24 @@ nextBtnSec.addEventListener("click", function(event){
 
 nextBtnThird.addEventListener("click", function(event){
   event.preventDefault();
-
   if(fecha.value==''){
-      alert("ingresa una fecha")
+    errDate.innerHTML = "<h4 style=color:red>Fecha de nacimiento requerida!</h4>";
   }
-  else if(fecha.value>"2006-01-01"){
-    alert("ingresa una fecha menor a la elegida")
+  else if(fecha.value > "2006-01-01"){
+    errDate.innerHTML = "<h4 style=color:red>Debes ser mayor de edad!</h4>";
   }
-    else if(fecha.value<"1930-01-01"){
-    alert("ingresa una fecha mayor a la elegida")
-  }else{
-       slidePage.style.marginLeft = "-75%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+  else if(fecha.value<"1930-01-01"){
+    errDate.innerHTML = "<h4 style=color:red>Ingresar una fecha mayor!</h4>";
+  }else if(fecha.value < "2006-01-01" && fecha.value > "1930-01-01"){
+    errDate.innerHTML = "";
   }
-
-
-
-
- 
+  if(fecha.value < "2006-01-01" && fecha.value > "1930-01-01"){
+    slidePage.style.marginLeft = "-75%";
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+  }
 });
  
 //VALIDACION EMAIL
@@ -118,19 +127,19 @@ let  emailRegex=/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 submitBtn.addEventListener("click", function(){
   
   if(emailRegex.test(email.value)==false){
-    alert('tu correo debe de llevar @ y .com, .mx, etc')
+    errEmail.innerHTML = "<h4 style=color:red>Tu correo debe llevar @ y .com, .mx, etc!</h4>";
   }else if(email.value==''){
-    alert("ingresa un valor al campo correo")
+    errEmail.innerHTML = "<h4 style=color:red>Campo Email requerido!</h4>";
   }
 
-  else if(password.value==''){
-    alert("ingresa un valor a la contraseña")
-  }else if(password.value.length<8){
-    alert("Tu contraseña debe tener como minimo 8 caracteres, incluyendo mayusculas y minusculas")
-  }else{
-       window.location.href = "login.php";
-  }  
- 
+  if(password.value==''){
+   errPassword.innerHTML = "<h4 style=color:red>Campo Contraseña requerido!</h4>";
+  }else if(password.value.length < 8){    
+    errPassword.innerHTML = "<h4 style=color:red>Tu contraseña debe tener como minimo 8 caracteres, incluyendo mayusculas y minusculas!</h4>";
+  }
+  // if(emailRegex.test(email.value) == true && email.value.length > 0  && password.value.length <= 8 ) {
+  //   window.location.href = "login.php";
+  // }
 });
 
 //BOTONES PARA REGRESAR 

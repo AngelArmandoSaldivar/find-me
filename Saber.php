@@ -106,7 +106,7 @@
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInLeftSmall">
-              <div class="thumb-line"><img src="images/adultos.jpg" alt="" width="531" height="640"/>
+              <div class="thumb-line"><img src="images/adultos.jpg" alt="Imagen adultos" width="531" height="640"/>
               </div>
             </div>
             <div class="cell-sm-6">
@@ -116,8 +116,8 @@
                 
                 </article>
                 <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-                <p class="wow fadeInLeftSmall" data-wow-delay=".3s" >El envejecimiento es individual, es el resultado de la combinación de nuestra carga genética y la forma de adaptarnos al teatro de nuestra vida. La adaptación satisfactoria, la alta autoestima, la libertad, la felicidad, el bienestar guardan
-                una relación con la buena calidad de vida en general. Los factores que consideramos mas im-portantes para una buena  calidad de vida en la vejez serían: el grado de funcionalidad física, psíquica y social, la muerte de un miembro de la pareja y el estado de salud percibid.</p>
+                <h4 class="wow fadeInLeftSmall" data-wow-delay=".3s" style="text-align: justify;">El envejecimiento es individual, es el resultado de la combinación de nuestra carga genética y la forma de adaptarnos al teatro de nuestra vida. La adaptación satisfactoria, la alta autoestima, la libertad, la felicidad, el bienestar guardan
+                una relación con la buena calidad de vida en general. Los factores que consideramos mas im-portantes para una buena  calidad de vida en la vejez serían: el grado de funcionalidad física, psíquica y social, la muerte de un miembro de la pareja y el estado de salud percibid.</h4>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInLeftSmall">
-              <div class="thumb-line"><img src="images/adultos2.jpg" alt="" width="531" height="640"/>
+              <div class="thumb-line"><img src="images/ayudaAdulto.jpg" alt="" width="531" height="640"/>
               </div>
             </div>
 
@@ -140,7 +140,7 @@
                   
                 </article>
                 <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="index.php" data-wow-delay=".4s">Regresar a inicio</a>
+                <h4 class="wow fadeInLeftSmall" data-wow-delay=".3s" style="text-align: justify;">"Estancia para adultos mayores ” en apoyo de las personas de la tercera edad o con alguna discapacidad, que sufran algún incidente para obtener información relevante de manera rápida y puedan ser canalizados a sus familiares.</h4><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="index.php" data-wow-delay=".4s">Regresar a inicio</a>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- coded by Himic-->
   </body>
 </html>
