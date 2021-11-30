@@ -2,6 +2,10 @@
     session_start();
     include 'conection.php';
     $correo = $_SESSION['email'];
+
+    if(!isset($_SESSION['email'])) {
+      header("location: login.php");
+    } else {
 ?>
 
 <!DOCTYPE html>
@@ -40,33 +44,21 @@
                       <div class="brand__name"><img class="brand__logo-dark" src="assets/images/FM.png" style="width:110px"/>
                       <span></span></div></a></div>
                 </div>
-                <!-- RD Navbar Nav-->
-                <div class="rd-navbar-nav-wrap">
-                  <div class="rd-navbar-element">
-                    <ul class="list-icons list-inline-sm">                      
-                      <?php
-                         $correo = $_SESSION['email'];
-                         $query = "SELECT name, lastname FROM users WHERE email='$correo'";
-                     
-                         $result = mysqli_query($conection,$query);
-                     
-                         while($row = $result->fetch_assoc()) {
-                             echo "<h5>".$row['name']."</h5> ", "<h5>".$row['lastname']."</h5> ";                             
-                         }
-                      ?>
-                    </ul>
-                  </div>
-                  <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav">
-                    <li class="active"><a href="userView.php">Inicio<span></span><span></span><span></span><span></span></a>
-                    </li>
-                    <li><a href="registerContact.php">Añadir contacto de confianza<span></span><span></span><span></span><span></span></a>
-                    </li>                
-                    <li><a href="#">Contacto<span></span><span></span><span></span><span></span></a>
-                    <li><a href="index.php">Salir<span></span><span></span><span></span><span></span></a>
-                    </li>
-                  </ul>
-                </div>
+                <?php
+
+                $correo = $_SESSION['email'];
+                $query = "SELECT email FROM users WHERE email='$correo'";
+
+                $result = mysqli_query($conection,$query);
+
+                while($row = $result->fetch_assoc()) {
+                  if($row["email"] == "") {
+                    require('menuAll.php');
+                  } else {
+                    require('menu.php');
+                  }                         
+                }
+                ?>
               </div>
             </div>
           </nav>
@@ -87,7 +79,22 @@
                       echo "<h5>".$row['name']."</h5> ", "<h5>".$row['lastname']."</h5> ";                             
                     }
                 ?></h3>
-              <div class="thumb-line"><img src="images/qr_prueba.png" alt="" style="width:450px"/>
+              <div class="thumb-line">
+           
+              <?php
+                    $correo = $_SESSION['email'];
+                    $query = "SELECT * FROM users WHERE email='$correo'";
+                
+                    $result = mysqli_query($conection,$query);
+                
+                    while($row = $result->fetch_assoc()) {
+                        echo "<a href='QR/show.php?id=https://findmed.herokuapp.com/helpme.php?id=".$row["idusers"]."' class='btn btn-md btn-danger btn-block'>Ver QR</a>";                             
+                    }
+                ?>
+                    <!-- <a href="QR/show.php" class="btn btn-md btn-danger btn-block" value="Generar" ></a> -->
+                <!-- </form> -->
+              </div>
+           
               </div>
             </div>
             <div class="cell-sm-6">
@@ -183,3 +190,8 @@
     <!-- coded by Himic-->
   </body>
 </html>
+
+<?php 
+}
+ob_end_flush();
+?>

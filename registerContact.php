@@ -32,8 +32,11 @@
             echo "Complete todos los campos!";
         } 
     }
+
+    if(!isset($_SESSION['email'])) {
+      header("location: login.php");
+    } else {
  
-     
 ?>
 
 <!DOCTYPE html>
@@ -215,3 +218,8 @@
       <script src="scripts.js"></script>
    </body>
 </html>
+
+<?php 
+}
+ob_end_flush();
+?>

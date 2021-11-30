@@ -1,0 +1,6 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.204",
+        "endroid/qrcode": "^4.4"
+    }
+}
